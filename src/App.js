@@ -22,6 +22,12 @@ class App extends React.Component{
                       title: 'Rock Climb',
                       completed: false,
                       notes: 'go rock climbing'
+                      },
+                   
+                     { id: 3,
+                      title: 'Trail Run',
+                      completed: false,
+                      notes: 'go trail running'
                       }
                     ]
                 }
