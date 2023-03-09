@@ -15,6 +15,7 @@ class ToDoList extends React.Component{
 
    
    deleteItem(id){
+    console.log("item deleted");
     console.log("id", id);
 
    }
