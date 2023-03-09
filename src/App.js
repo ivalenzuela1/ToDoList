@@ -13,29 +13,27 @@ class App extends React.Component{
     super();
     this.state = {
         todoList: [{ id: 1,
-                     title: 'Finish HW',
+                     title: 'Understand app E2E',
                      completed: false,
-                     notes: 'Finish my ReactJS HW'
+                     notes: 'develop app in react'
                      },
 
                      { id: 2,
-                      title: 'Rock Climb',
+                      title: 'Learn about Git & Github',
                       completed: false,
-                      notes: 'go rock climbing'
+                      notes: 'Finish tutorial'
                       },
                    
                      { id: 3,
-                      title: 'Trail Run',
+                      title: 'Add a database to store list',
                       completed: false,
-                      notes: 'go trail running'
+                      notes: 'Upload data to Google cloud.'
                       }
                     ]
                 }
 
       this.addToDo= this.addToDo.bind(this);
       this.deleteToDo= this.deleteToDo.bind(this); 
-      
-
     }
 
     addToDo(data){
