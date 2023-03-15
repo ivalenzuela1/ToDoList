@@ -43,9 +43,6 @@ class NewToDo extends React.Component{
              </form>
 
              <Link to='/'><button>cancel</button></Link>
-
-
-
             </div>
         )
     

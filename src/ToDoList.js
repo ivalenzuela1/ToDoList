@@ -13,13 +13,11 @@ class ToDoList extends React.Component {
     this.deleteItem = this.deleteItem.bind(this);
   }
 
-
   deleteItem(id) {
     console.log("item deleted");
     console.log("id", id);
 
   }
-
 
   createList() {
     //console.log("list", this.props.list);
@@ -28,7 +26,7 @@ class ToDoList extends React.Component {
     const listArr = this.props.list;
     const listHtml = listArr.map((item) => {
       return (
-          <li><Link to={`/${item.id}`}><div id={item.id}>{item.title}</div></Link>
+          <li key={item.id}><Link to={`/${item.id}`}><div id={item.id}>{item.title}</div></Link>
           <button onClick={this.deleteItem}> X </button></li>
       )
     });
@@ -36,7 +34,7 @@ class ToDoList extends React.Component {
     return (
       <div>
         <ol>
-        {listHtml}
+          {listHtml}
         </ol>
       </div>
     )
@@ -47,9 +45,7 @@ class ToDoList extends React.Component {
       <div>
         <div> {this.createList()} </div>
         <Link to='/new'><button>NEW TODO</button></Link>
-
       </div>
-
     )
   }
 }
